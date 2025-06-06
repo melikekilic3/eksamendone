@@ -1,0 +1,108 @@
+/* Mobile-first styling – standard til mobil */
+body {
+    font-size: 16px; /* Grundskriftstørrelse */
+    background-color: #F2E8E2; /* Baggrundsfarve */
+    padding: 0 20px; /* Indvendig afstand til siderne */
+}
+
+/* Tablet (større skærm) */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px; /* Større skrift på større skærme */
+    }
+}
+
+/* H1 – Poppins Bold 20px */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Fed */
+    font-size: 20px;
+    margin-top: 40px; /* Luft over overskriften */
+    margin-bottom: 20px; /* Luft under overskriften */
+    text-align: left;
+}
+
+/* H2 – Quicksand Semibold 20px */
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 20px;
+    margin-bottom: 10px; /* Luft under sekundær overskrift */
+    text-align: left;
+}
+
+/* P – Nunito Light 20px */
+p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300; /* Let */
+    font-size: 20px;
+    margin-bottom: 80px; /* God luft under afsnit */
+    text-align: left;
+}
+
+/* Wrapper til knapper - centrering og afstand */
+.button-wrapper {
+    display: flex;
+    flex-direction: column; /* Knapper under hinanden */
+    align-items: center;
+    gap: 15px; /* Mellemrum mellem knapper */
+    margin-bottom: 60px; /* Luft under knapperne */
+}
+
+/* Styling af begge knapper */
+.btn-green, .btn-red {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 300px; /* Ens bredde */
+    text-align: center;
+}
+
+/* Grøn knap - normal og hover */
+.btn-green {
+    background-color: #50864D;
+    color: white;
+}
+.btn-green:hover {
+    background-color: #3b6638;
+}
+
+/* Rød knap - normal og hover */
+.btn-red {
+    background-color: #BE4747;
+    color: white;
+}
+.btn-red:hover {
+    background-color: #a33838;
+}
+
+/* Fast footer med ikoner */
+.fixed-footer {
+    position: fixed; /* Fast placeret i bunden */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Fylder hele bredden */
+    background-color: #F2E8E2;
+    border-top: 1px solid black; /* Skillelinje over footeren */
+    display: flex;
+    justify-content: space-around; /* Fordeling af links */
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000; /* Sørger for at footeren ligger øverst */
+}
+
+/* Styling af links i footeren */
+.fixed-footer a {
+    color: #333; /* Farve på ikoner */
+    font-size: 24px; /* Størrelse på ikoner */
+    text-decoration: none;
+}
+
+/* Farve ved hover på links */
+.fixed-footer a:hover {
+    color: #BE4747;
+}
