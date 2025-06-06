@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Gør siden responsiv og tilpasser indhold til mobilskærme -->
+  <title>PlantiGreen · Forside</title> <!-- Titel som vises i fanebladet -->
+  <link rel="stylesheet" href="eksamen.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons - bruges i footernavigation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+
+
+<body>
+<header role="banner"> <!-- Semantisk korrekt tag til toppen af siden -->
+  <figure> <!-- Figur-element til logo -->
+    <img src="images/logo.svg" alt="PlantiGreen logo" class="logo"> <!-- Logo med alternativ tekst for tilgængelighed -->
+  </figure>
+
+  <hr class="skillelinje"> <!-- Dekorativ linje - skiller elementer visuelt -->
+
+  <h1>Velkommen til PlantiGreen</h1> <!-- Hovedoverskrift på siden -->
+  <p class="lead"> <!-- Fremhævet introduktionstekst -->
+    Få din bæredygtige måltidskasse direkte til døren!<br> <!-- Linjeskift for læsbarhed -->
+    Skræddersyet til travle børnefamilier
+  </p>
+
+  <figure> <!-- Billede med familie for at skabe identifikation -->
+    <img src="images/forsidebillede.svg" alt="Familie laver mad" class="forsidebillede">
+  </figure>
+  <p> <!-- Call-to-action knap -->
+    <a href="maaltidskasser.html" class="maaltidskasse-boks" role="button">
+      Se vores måltidskasser
+    </a>
+  </p>
+</header>
+
+
+
+
+<!-- ====== HOVEDINDHOLD ====== -->
+<main id="maincontent"> <!-- Semantisk tag til hovedindholdet -->
+
+  <!-- INTRODUKTION -->
+  <section aria-labelledby="intro"> <!-- Tilgængelighed: forbinder section med tekst-id -->
+    <p id="intro" class="brodtekst"> <!-- Brødtekst i introduktionen -->
+      Vi gør hverdagen nemmere med klimavenlige måltider, der er hurtige at lave! Elsket af både de store og små.
+    </p>
+  </section>
+
+
+  <hr class="skillelinje2"> <!-- Den anden visuel adskiller -->
+
+
+  <!-- STATEMENT OG FORDELE -->
+  <section aria-labelledby="samvittighed"> <!-- Sektion for virksomhedens værdier -->
+    <h2 id="samvittighed" class="førstetekst">“Måltider med god samvittighed”</h2> <!-- Underoverskrift/statement -->
+
+    <div class="tekstsektion"> <!-- Container for fordelene -->
+
+      <!-- Hver fordel placeres i et <article> for semantik -->
+      <article>
+        <h3 class="underoverskrift">Du sparer op til 30 % mindre madspild</h3> <!-- Fordelsoverskrift -->
+        <p class="afsnittekst">
+          Vores præcise portionsstørrelser og nøje tilpassede opskrifter betyder, at du undgår unødige rester. Det sparer i gennemsnit 30 % mad sammenlignet med traditionelt indkøb.
+        </p>
+      </article>
+
+      <article>
+        <h3 class="underoverskrift">80 % plantebaseret = lavere CO₂-aftryk</h3>
+        <p class="afsnittekst">
+          Vores måltider består overvejende af plantebaserede ingredienser, som i gennemsnit udleder op til 60 % mindre CO₂ end måltider med kød som hovedbestanddel.
+        </p>
+      </article>
+
+      <article>
+        <h3 class="underoverskrift">Sæsonbaserede råvarer – kortere rejse, friskere mad</h3>
+        <p class="afsnittekst">
+          Vi prioriterer danske og nordiske grøntsager i sæson, hvilket minimerer transportafstand og energiforbrug – og samtidig giver bedre smag.
+        </p>
+      </article>
+
+      <article>
+        <h3 class="underoverskrift">Emballage med omtanke</h3>
+        <p class="afsnittekst">
+          Al vores emballage er 100 % genanvendelig, og vi arbejder løbende på at nedbringe plast og unødvendig emballage. Mindre affald – mere ansvar.
+        </p>
+      </article>
+
+      <article>
+        <h3 class="underoverskrift">Du sparer op mod 7 kg CO₂ hver uge</h3>
+        <p class="afsnittekst">
+          Ved at vælge vores kasser frem for konventionelle madindkøb og måltider sparer en gennemsnitlig familie ca. 7 kg CO₂ om ugen – svarende til at lade bilen stå i over 40 km.
+        </p>
+      </article>
+    </div>
+  </section>
+
+
+
+  <!-- HVEM ER VI? -->
+  <section aria-labelledby="om-os"> <!-- Om os sektion -->
+    <h2 id="om-os" class="førstetekst">Hvem er vi?</h2> <!-- Sektionstitel -->
+
+    <div class="tekstsektion"> <!-- Container til beskrivelsen -->
+      <p class="afsnittekst">
+        Vi er et passioneret team med fokus på hverdagen og omtanke for fremtiden. Vi arbejder for at gøre det lettere for småbørnsfamilier at spise mere bæredygtigt og overskueligt.<br><br> <!-- Brug af linjeskift -->
+        Vores måltidskasser gør det nemt at spare tid, undgå madspild og tage grønne valg i en travl hverdag.
+      </p>
+    </div>
+  </section>
+</main>
+
+
+<!-- ====== FOOTER NAVIGATION ====== -->
+
+
+
+  <nav class="fixed-footer" aria-label="Primær navigation"> <!-- Fast navigation nederst -->
+    <!-- Ikon-links med skærmlæser-labels -->
+    <a href="eksamen.html" aria-label="Forside"><i class="bi bi-house"></i></a> <!-- Hjem -->
+    <a href="notifkationer.html" aria-label="Notifikationer"><i class="bi bi-bell"></i></a> <!-- Notifikationer -->
+    <a href="profil.html" aria-label="Profil og kontakt"><i class="bi bi-person"></i></a> <!-- Profil -->
+  </nav>
+
+
+
+
+</body>
+</html>
