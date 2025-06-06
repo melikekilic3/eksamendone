@@ -1,0 +1,102 @@
+/* =========================================================
+   GRUNDLÆGGENDE TYPOGRAFI & LAYOUT  (Mobile-first)
+   ========================================================= */
+body {
+    font-size: 16px;                    /* Standard tekststørrelse på mobil */
+    background-color: #F2E8E2;          /* Lys beige baggrund */
+    font-family: 'Nunito', sans-serif;  /* Standard brødtekst-font */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Tablet og større skærme --- */
+@media (min-width: 768px) {
+    body { font-size: 18px; }           /* Lidt større tekst på brede skærme */
+}
+
+/* =========================================================
+   OVERSKRIFTER
+   ========================================================= */
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 40px 0 20px;   /* Luft over og under */
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 40px;   /* Ekstra luft under h2 */
+}
+
+/* =========================================================
+   KNAPGRUPPE
+   ========================================================= */
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;            /* Afstand mellem de to knapper */
+    margin-bottom: 120px; /* Luft, så knapper ikke ligger op ad footeren */
+}
+
+/* --- Fælles stil for begge knapper --- */
+.btn-green, .btn-red {
+    width: 300px;
+    padding: 10px 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Grøn knap (tilmelding) */
+.btn-green {
+    background-color: #50864D;
+    color: #fff;
+}
+.btn-green:hover { background-color: #3b6638; }
+
+/* Rød knap (login) */
+.btn-red {
+    background-color: #BE4747;
+    color: #fff;
+}
+.btn-red:hover { background-color: #a33838; }
+
+/* =========================================================
+   FAST FOOTER­NAVIGATION
+   ========================================================= */
+.fixed-footer {
+    position: fixed;          /* Låser footer til bunden af viewporten */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F2E8E2;
+    border-top: 1px solid #000; /* Tynd sort linje som skillelinje */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;            /* Sørger for at footeren ligger øverst */
+}
+
+/* Ikonlinks i footeren */
+.fixed-footer a {
+    color: #333;              /* Mørkegrå standardfarve */
+    font-size: 24px;
+    text-decoration: none;
+}
+.fixed-footer a:hover { color: #BE4747; } /* Rød farve ved hover */
+
+/* =========================================================
+   EKSTRA LUFT SÅ INDHOLD IKKE SKJULES BAG FOOTER
+   ========================================================= */
+main { padding-bottom: 140px; } /* Justér højden hvis din footer ændrer sig */
