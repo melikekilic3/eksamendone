@@ -1,0 +1,167 @@
+/* --------------------------------------------------
+   0. Google-fonts import (uforandret)
+-------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;500;600;700&family=Nunito:wght@300;400&display=swap'); /* Importerer 3 skrifttyper */
+
+/* --------------------------------------------------
+   1. Mobile-first basis
+-------------------------------------------------- */
+html { box-sizing: border-box; } /* Gør box-model mere forudsigelig */
+*, *::before, *::after { box-sizing: inherit; } /* Arver box-model til alle elementer */
+
+body {
+    margin: 0;                     /* Fjerner default-margin */
+    background: #F2ECE2;           /* Hovedbaggrund – beige tone */
+    color: #000;                   /* Standardtekstfarve */
+    font-size: 16px;               /* Mobile-fontstørrelse */
+    text-align: center;            /* Centrerer alt standardtekst (ændres lokalt hvor nødvendigt) */
+    font-family: 'Nunito', sans-serif; /* Primær brødtekst-font */
+}
+
+/* ——— Tablet ≥ 768 px ——— */
+@media (min-width: 768px) {
+    body { font-size: 18px; }      /* Lidt større skrift på større skærme */
+}
+
+/* --------------------------------------------------
+   2. Globale semantiske wraps
+-------------------------------------------------- */
+header, main, footer {
+    width: 100%;                   /* Fylder hele bredden */
+    max-width: 560px;              /* Læsevenlig max-bredde */
+    margin: 0 auto;                /* Center på brede skærme */
+}
+
+figure { margin: 0; }              /* Fjerner browserens default-margin i <figure> */
+
+/* --------------------------------------------------
+   3. Typografi-klasser & overskrifter
+-------------------------------------------------- */
+h1 {
+    margin: 40px 0 10px;           /* Luft over/under */
+    font-family: 'Poppins', sans-serif; /* Brug Poppins til hovedoverskrift */
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.lead {                            /* Introduktionstekst under h1 */
+    margin: 10px auto 20px;
+    padding: 0 1.6px;              /* Micro-indrykning for bedre læsbarhed */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.førstetekst {                     /* Sektionstitler (h2) */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 10px 0 30px;
+}
+
+.underoverskrift {                 /* H3-underrubrikker */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+    margin: 20px 0 5px;
+}
+
+.brodtekst,
+.afsnittekst {                     /* Generelle tekstklasser */
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.brodtekst {
+    max-width: 300px;              /* Smal tekstspalte for kort intro */
+    margin: 10px auto 20px;
+}
+
+.afsnittekst {
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+/* --------------------------------------------------
+   4. Billeder & linjer
+-------------------------------------------------- */
+.logo {
+    display: block;                /* Fjerner inline-gap */
+    width: 200px;
+    height: auto;
+    margin: 15px auto 0;           /* Centerer logoet */
+}
+
+.forsidebillede {
+    width: 100%;                   /* Responsivt billede */
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.skillelinje,
+.skillelinje2 {
+    border: none;
+    border-top: 1px solid #000;    /* Tynd sort streg */
+}
+
+.skillelinje  { margin: 10px 0;     width: 100vw; } /* Fuld bredde under logo */
+.skillelinje2 { margin: 40px auto 20px; width: 60%; } /* Kortere streg mellem sektioner */
+
+/* --------------------------------------------------
+   5. Call-to-action boks
+-------------------------------------------------- */
+.maaltidskasse-boks {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 14px 20px;
+    border-radius: 30px;           /* Runde hjørner */
+    background: #BE4747;           /* Rødgrøn kontrastfarve */
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    text-decoration: none;         /* Fjerner default link-streg */
+    cursor: pointer;
+}
+
+/* --------------------------------------------------
+   6. Tekstsektion container
+-------------------------------------------------- */
+.tekstsektion {
+    max-width: 350px;              /* Smal læsespalte */
+    margin: 0 auto 60px;
+    text-align: left;              /* Venstrestillet brødtekst */
+    padding-bottom: 30px;
+
+}
+
+/* --------------------------------------------------
+   7. Fast bundnavigation
+-------------------------------------------------- */
+.fixed-footer {
+    position: fixed;               /* Låser footer til bunden */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #F2E8E2;           /* Samme beige som body */
+    border-top: 1px solid #000;    /* Tynd sort kant */
+    display: flex;
+    justify-content: space-around; /* Lige mellemrum mellem ikoner */
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;                 /* Sørger for at footeren ligger øverst */
+}
+
+.fixed-footer a {
+    color: #333;                   /* Mørkegrå ikonfarve */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.fixed-footer a:hover {
+    color: #BE4747; } /* Farveskift ved hover */
