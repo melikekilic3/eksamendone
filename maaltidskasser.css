@@ -1,0 +1,114 @@
+/* Mobile-first styling – standard til mobil */
+body {
+    font-size: 16px; /* Standard fontstørrelse for mobil */
+    background-color: #F2E8E2 !important; /* Lys beige baggrundsfarve */
+    font-family: 'Nunito', sans-serif; /* Brødtekst font */
+    margin: 0; /* Fjerner browserens standard margin */
+    padding: 20px; /* Indvendig afstand til alle sider */
+    padding-bottom: 100px; /* Skaber luft under sidste billede */
+    }
+
+
+
+/* Tablet (større skærm) - ændrer fontstørrelse ved bredde 768px og op */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px; /* Større font for bedre læsbarhed på større skærme */
+    }
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif; /* Overskrift font */
+    font-weight: 300; /* Let vægt for et elegant look */
+    margin-top: 60px; /* Plads over overskriften */
+    font-size: 20px; /* Størrelse på overskriften */
+    text-align: center; /* Centrerer teksten */
+    margin-bottom: 40px; /* Plads under overskriften */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Container for knappen, som placeres til højre */
+.button-container {
+    display: flex; /* Brug flexbox layout */
+    justify-content: flex-end; /* Skubber indhold til højre */
+    padding-bottom: 30px;
+}
+
+/* Stil til dropdown-knappen */
+.green-button {
+    background-color: #50864D; /* Grøn baggrundsfarve */
+    color: white; /* Hvid tekst */
+    border: none; /* Ingen kant */
+    border-radius: 30px; /* Runde hjørner */
+    padding: 10px 20px; /* Indvendig afstand i knappen */
+    font-family: 'Quicksand', sans-serif; /* Font til knappen */
+    font-weight: 500; /* Mellem vægt */
+    font-size: 16px; /* Tekststørrelse */
+    cursor: pointer; /* Pointer cursor ved hover */
+    display: inline-flex; /* Flexbox for justering af ikon og tekst */
+    align-items: center; /* Vertikal centrering */
+    gap: 8px; /* Plads mellem ikon og tekst */
+}
+
+/* Stil til ikonet i knappen */
+.green-button i {
+    font-size: 18px; /* Ikonets størrelse */
+}
+
+/* Hover-effekt på knappen */
+.green-button:hover {
+    background-color: #40673a; /* Mørkere grøn ved hover */
+}
+
+
+
+
+/* Fast footer nederst på siden */
+.fixed-footer {
+    position: fixed; /* Fastlåst position */
+    bottom: 0; /* Placering ved bunden */
+    left: 0; /* Starter fra venstre kant */
+    width: 100%; /* Fylder hele bredden */
+    background-color: #F2E8E2; /* Samme som body baggrund */
+    border-top: 1px solid black; /* Tynd skillelinje øverst */
+    display: flex; /* Flexbox til placering af ikoner */
+    justify-content: space-around; /* Jævn afstand mellem ikoner */
+    align-items: center; /* Vertikal centrering */
+    padding: 10px 0; /* Lodret padding */
+    z-index: 1000; /* Sørger for at footeren er øverst */
+}
+
+
+/* Stil til links (ikoner) i footeren */
+.fixed-footer a {
+    color: #333; /* Mørkegrå farve på ikoner */
+    font-size: 24px; /* Størrelse på ikoner */
+    text-decoration: none; /* Ingen understregning */
+}
+
+
+
+Fast bundnavigation
+
+.fixed-footer {
+    position: fixed;               /* Låser footer til bunden */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #F2E8E2;           /* Samme beige som body */
+    border-top: 1px solid #000;    /* Tynd sort kant */
+    display: flex;
+    justify-content: space-around; /* Lige mellemrum mellem ikoner */
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;                 /* Sørger for at footeren ligger øverst */
+}
+
+.fixed-footer a {
+    color: #333;                   /* Mørkegrå ikonfarve */
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.fixed-footer a:hover { color: #BE4747; } /* Farveskift ved hover */
